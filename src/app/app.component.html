@@ -1,0 +1,79 @@
+<div id="wrapper">
+
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header">
+          <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="assets/img/admin.jpg"  style="width: 20%"/>
+                             </span>
+            <a data-toggle="dropdown" class="dropdown-toggle" routerLink="/detail-stale/1">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Will</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+          </div>
+          <div class="logo-element">
+            IN+
+          </div>
+        </li>
+        <li>
+          <a routerLink="/form"><i class="fa fa-th-large"></i> <span class="nav-label">form</span></a>
+        </li>
+        <li>
+          <a routerLink="/infomation"><i class="fa fa-envelope"></i> <span class="nav-label">infomation </span><span class="label label-warning pull-right">16/24</span></a>
+        </li>
+        <li>
+          <a routerLink="/search"><i class="fa fa-globe"></i> <span class="nav-label">search</span><span class="label label-info pull-right">NEW</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="page-wrapper" class="gray-bg">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " ><i class="fa fa-bars"></i> </a>
+          <form role="search" class="navbar-form-custom" action="search_results.html">
+            <div class="form-group">
+              <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+            </div>
+          </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li>
+            <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" >
+              <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" >
+              <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i class="fa fa-sign-out"></i> Log out
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+    <router-outlet></router-outlet>
+
+
+    <div class="footer" >
+      <div class="pull-right">
+        Free.
+      </div>
+      <div>
+         2014-2017
+      </div>
+    </div>
+  </div>
+</div>
+
